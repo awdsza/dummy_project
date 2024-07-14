@@ -1,17 +1,17 @@
-package com.dummy.entity;
+package com.dummy.domain.product;
 
 import lombok.Builder;
 import lombok.Getter;
 
 @Getter
 public class Product {
-    private Long id;
     private String productName;
     private int productPrice;
-
+    private int quantity;
     @Builder
-    private Product(String productName, int productPrice) {
+    private Product(String productName, int productPrice, int quantity) {
         this.productName = productName;
         this.productPrice = productPrice;
+        this.quantity = quantity;
     }
 }

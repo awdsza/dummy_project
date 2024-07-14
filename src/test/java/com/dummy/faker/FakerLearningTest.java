@@ -14,25 +14,18 @@ import java.util.Random;
 public class FakerLearningTest {
 
     
-    @DisplayName("")
+    @DisplayName("DataFaker 기본적인 프로젝트.")
     @Test
-    void test(){
+    void DataFakerLearningTest(){
     //given
         Faker faker = new Faker(Locale.KOREA);
         String userId = faker.idNumber().peselNumber();
         String userName = faker.name().fullName();
         String address = faker.address().fullAddress();
-        System.out.println("userId = " + userId+", userName="+userName+", address="+address
-        );
-        int count = new Random(20).nextInt();
-        for(int i=0;i<count;i++){
-            //derProducts.productName
-        }
-
-
+        System.out.println("userId = " + userId+", userName="+userName+", address="+address);
         //when
 
-    //then
+        //then
     }
 }
 
